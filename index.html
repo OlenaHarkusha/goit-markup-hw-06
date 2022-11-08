@@ -427,27 +427,40 @@
         <form class="modal-form">
           <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
           <div class="form-field">
-            <input type="text" name="name" class="form-input" id="modal-name" placeholder=" " />
             <label for="modal-name" class="form-label">Ім'я</label>
-            <svg class="form-icon" width="18" height="18">
-              <use href="./img/icons.svg#person"></use>
-            </svg>
+            <div class="input-wrap">
+              <input type="text" name="name" class="form-input" id="modal-name" placeholder=" " />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./img/icons.svg#person"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-field">
-            <input type="tel" name="tel" class="form-input" id="modal-tel" placeholder=" " />
             <label for="modal-tel" class="form-label">Телефон</label>
-            <svg class="form-icon" width="18" height="18">
-              <use href="./img/icons.svg#phone"></use>
-            </svg>
+            <div class="input-wrap">
+              <input type="tel" name="tel" class="form-input" id="modal-tel" placeholder=" " />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./img/icons.svg#phone"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-field">
-            <input type="email" name="email" class="form-input" id="modal-email" placeholder=" " />
             <label for="modal-email" class="form-label">Пошта</label>
-            <svg class="form-icon" width="18" height="18">
-              <use href="./img/icons.svg#email"></use>
-            </svg>
+            <div class="input-wrap">
+              <input
+                type="email"
+                name="email"
+                class="form-input"
+                id="modal-email"
+                placeholder=" "
+              />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./img/icons.svg#email"></use>
+              </svg>
+            </div>
           </div>
-          <div class="form-field">
+          <div class="form-field textarea">
+            <label for="modal-text" class="form-label">Коментар</label>
             <textarea
               name="comment"
               id="modal-text"
@@ -455,19 +468,17 @@
               class="form-textarea"
               placeholder="Введіть текст"
             ></textarea>
-            <label for="modal-text" class="form-label">Коментар</label>
           </div>
           <div class="form-field field-contract">
-            <input
-              type="checkbox"
-              name="form-contract"
-              id="form-contract"
-              class="contract-checkbox visually-hidden"
-            />
-            <svg class="contract-icon" width="16" height="15">
-              <use href="./img/icons.svg#check"></use>
-            </svg>
-            <label for="form-contract" class="contract-label">
+            <label class="contract-label">
+              <input
+                type="checkbox"
+                name="form-contract"
+                class="contract-checkbox visually-hidden"
+              />
+              <svg class="contract-icon" width="16" height="15">
+                <use href="./img/icons.svg#check"></use>
+              </svg>
               Погоджуюся з розсилкою та приймаю
               <a href="#" class="contract-link">Умови договору</a></label
             >

@@ -403,6 +403,9 @@ a {
 .social-link:focus {
   background-color: var(--active-accent-color);
 }
+.subscription {
+  margin-left: auto;
+}
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -656,8 +659,12 @@ a {
 }
 .form-field {
   position: relative;
-  margin-bottom: 28px;
+  margin-bottom: 10px;
 }
+.form-field.textarea {
+  margin-bottom: 20px;
+}
+
 .form-input {
   width: 100%;
   height: 40px;
@@ -679,12 +686,16 @@ a {
   fill: var(--main-accent-color);
 }
 .form-label {
-  position: absolute;
+  /*   position: absolute;
   top: -20px;
-  left: 0;
+  left: 0; */
+  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+}
+.input-wrap {
+  position: relative;
 }
 .form-icon {
   position: absolute;
@@ -705,12 +716,13 @@ a {
   outline: 1px solid var(--main-accent-color);
 }
 .field-contract {
+  margin-bottom: 30px;
+}
+
+.contract-label {
   display: inline-flex;
   align-items: center;
-}
-.contract-checkbox {
-}
-.contract-label {
+
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -727,7 +739,11 @@ a {
   background-color: var(--main-accent-color);
   border: none;
 }
+.contract-checkbox:focus ~ .contract-icon {
+  outline: 1px solid var(--main-accent-color);
+}
 .contract-link {
+  margin-left: 5px;
   text-decoration: underline;
   color: var(--main-accent-color);
 }
